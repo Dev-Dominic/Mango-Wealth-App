@@ -1,8 +1,17 @@
-import { styled } from '@material-ui/core';
+import styled from '@emotion/styled';
+import React from 'react';
 
+const LandingContainer = styled.div`
+    background: var(--landing-background);
+    display: flex;
+
+`
 const Home = () => {
-
-    return (  );
+    return (
+        <LandingContainer>
+            Test
+        </LandingContainer>
+    );
 }
-
-export default Home;
+ 
+export default Home;  
