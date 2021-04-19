@@ -119,14 +119,3 @@ if __name__ == "__main__":
     print('USER 3')
     matchUser_product(user3, normalized_products)
 
-
-
-
-Provides functions for normalizing product vectors in the binary representation originally used as well as a way to apply logarithms to the product attributes for an alternative representation.
-
-Provides a function to match a user product-type preference vector to product vectors.
-
-To be added:
-Ranking of user matches
-Alternative user matching strategies
-Algorithmic optimization and uniform naming convention
