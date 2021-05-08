@@ -108,3 +108,9 @@ table {
 	color: var(--steps-blue);
 	margin-top: 3rem;
 }
+
+
+a {
+	color: var(--secondary-blue);
+	text-decoration: none;
+  }
