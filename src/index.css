@@ -134,3 +134,9 @@ a {
 	color: var(--primary-blue);
 	text-align: center;
 }
+
+.onboarding-form-label{
+	font-family: 'Lato', sans-serif; 
+	font-size: 22px;
+	font-weight: 500;
+}

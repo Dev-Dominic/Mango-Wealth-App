@@ -1,12 +1,47 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import styled from '@emotion/styled';
 import Grid from '@material-ui/core/Grid';
 import userQuestions from '../../assets/user-question.svg'
 
-const OnboardingWrapper = styled.div`
-background: var(--login-background);
-padding: 4rem 10rem 10rem 10rem;
 
+const OnboardingIntro = () => {
+    let history = useHistory();
+
+    const redirect = () => {
+        history.push('/onboarding-demographics')
+    }
+    return (
+        <OnboardingWrapper>
+            <p className="onboarding-heading"> User Onboarding </p>
+            <OnboardingContainer>
+                <Grid item xs={6}>
+                    <img src={userQuestions} alt="user-question" />
+                </Grid>
+
+                <Grid item xs={6}>
+                    <FormContainer>
+                        <p className="landing-sub-text"> Please answer a few questions to assist with your recommendation </p>
+                        <ContentContainer>
+                            <p className="onboarding-subtext"> Section 1: Demographics</p>
+                            <p className="onboarding-subtext"> Section 2: Financial Information</p>
+                            <p className="onboarding-subtext"> Section3: Financial Product Preferences </p>
+                        </ContentContainer>
+                    </FormContainer>
+
+                    <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                        <Button onClick={redirect}> Continue </Button>
+                    </div>
+                </Grid>
+
+            </OnboardingContainer>
+        </OnboardingWrapper>
+    );
+}
+
+const OnboardingWrapper = styled.div`
+    background: var(--login-background);
+    padding: 4rem 10rem 10rem 10rem;
 `;
 
 const FormContainer = styled.div`
@@ -44,34 +79,5 @@ const Button = styled.button`
     font-weight: 700;
     color: #ffff;
 `;
-
-const OnboardingIntro = () => {
-    return (
-        <OnboardingWrapper>
-            <p className="onboarding-heading"> User Onboarding </p>
-            <OnboardingContainer>
-                <Grid item xs={6}>
-                    <img src={userQuestions} alt="user-question" />
-                </Grid>
-
-                <Grid item xs={6}>
-                    <FormContainer>
-                        <p className="landing-sub-text"> Please answer a few questions to assist with your recommendation </p>
-                        <ContentContainer>
-                            <p className="onboarding-subtext"> Section 1: Demographics</p>
-                            <p className="onboarding-subtext"> Section 2: Financial Information</p>
-                            <p className="onboarding-subtext"> Section3: Financial Product Preferences </p>
-                        </ContentContainer>
-                    </FormContainer>
-
-                    <div style={{ display: "flex", justifyContent: "flex-end" }}>
-                        <Button> Continue </Button>
-                    </div>
-                </Grid>
-
-            </OnboardingContainer>
-        </OnboardingWrapper>
-    );
-}
 
 export default OnboardingIntro;
