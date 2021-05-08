@@ -10,7 +10,7 @@ const FormContainer = styled.div`
     padding: 2rem;
 `;
 
-const SignUpWrapper = styled.div`
+const LoginWrapper = styled.div`
     background: var(--landing-background);
     display: flex;
     height: 60vh;
@@ -38,33 +38,31 @@ const Button = styled.button`
     color: #ffff;
 `;
 
-const SignUp = () => {
+const Login = () => {
     return (
-        <SignUpWrapper>
+        <LoginWrapper>
             <Grid item xs={6}>
                 <ContentContainer>
-                    <p className="sub-headings" style={{ marginTop: "1.5rem" }} > Get the guidance you need to achieve what you deserve. </p>
-                    <p className="text-content"> Get started here. </p>
+                    <p className="sub-headings" style={{ marginTop: "2.5rem" }} > Jump right back in  </p>
+                    <p className="text-content"> Sign in to continue </p>
                 </ContentContainer>
             </Grid>
 
             <Grid item xs={6}>
                 <FormContainer>
-                    <TextField label="Name" variant="outlined" />
                     <TextField label="Email" variant="outlined" style={{ marginTop: "1rem" }} />
                     <TextField label="Password" variant="outlined" style={{ marginTop: "1rem" }} />
-                    <TextField label="Re-type Password" variant="outlined" style={{ marginTop: "1rem" }} />
-                    <div style={{ display: "flex", justifyContent: "space-between", marginTop: "2rem" }}>
-                        <p> Got an account?
-                            <a href="/sign-in"> Sign in </a>
+                    <a style={{ marginTop: "1.5rem" }} > Forgot password?</a>
+                    <div style={{ display: "flex", justifyContent: "space-between", marginTop: "3rem" }}>
+                        <p> New user?
+                            <a href="/sign-up"> Create account </a>
                         </p>
-                        <Button> Submit </Button>
+                        <Button> Sign In </Button>
                     </div>
                 </FormContainer>
-
             </Grid>
-        </SignUpWrapper>
+        </LoginWrapper>
     );
 }
 
-export default SignUp;
+export default Login;
