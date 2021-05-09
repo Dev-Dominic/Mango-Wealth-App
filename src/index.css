@@ -140,3 +140,9 @@ a {
 	font-size: 22px;
 	font-weight: 500;
 }
+
+.logo{
+	width: 1em;
+	height: 1em;
+	color: #fff;
+}
