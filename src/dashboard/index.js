@@ -4,6 +4,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Button from '@material-ui/core/Button';
+import { Line } from 'react-chartjs-2';
 
 const Dashboard = () => {
     return (
@@ -11,9 +12,25 @@ const Dashboard = () => {
             <p> DASHBOARD </p>
             <DashboardWrapper>
                 <ItemContainer>
-                    <Card>
+                    <Card variant="outlined">
                         <CardContent>
                             <h2> Income </h2>
+                            <div style={{ width: "500px", height: "400px" }}>
+                                <Line
+                                    height={400}
+                                    width={400}
+                                    options={{
+                                        maintainAspectRatio: false,
+                                    }}
+                                    data={{
+                                        labels: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'],
+                                        datasets: [{
+                                            label: 'Amount per day',
+                                            data: [12, 2, 5, 8, 30],
+                                        }]
+                                    }}
+                                />
+                            </div>
                         </CardContent>
                         <CardActions>
                             <Button size="small">Plus Income</Button>
