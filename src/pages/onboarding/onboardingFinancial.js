@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
+import styled from '@emotion/styled';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -7,6 +9,12 @@ import FormLabel from '@material-ui/core/FormLabel';
 
 
 const FinancialInformation = () => {
+    let history = useHistory();
+
+    const redirect = () => {
+        history.push('/onboarding-financial-products');
+    }
+
     const [payPeriod, setPayPeriod] = useState('');
     const [personalIncome, setPersonalIncome] = useState('');
     const [monthlyExpense, setMonthlyExpense] = useState('');
@@ -17,11 +25,11 @@ const FinancialInformation = () => {
     };
 
     const handlePersonalIncome = (event) => {
-        setPayPeriod(event.target.value);
+        setPersonalIncome(event.target.value);
     };
 
     const handleMonthlyExpense = (event) => {
-        setPayPeriod(event.target.value);
+        setMonthlyExpense(event.target.value);
     };
 
     const handleRiskAppetite = (event) => {
@@ -77,8 +85,29 @@ const FinancialInformation = () => {
                     labelPlacement="top"
                 />
             </RadioGroup>
+            <div style={{ display: "flex", justifyContent: "flex-end", marginTop: "2rem" }}>
+                <Button
+                    onClick={redirect}> Continue </Button>
+            </div>
         </div>
     )
 }
+
+
+const Button = styled.button`
+    background: var(--secondary-blue);
+    width: 224px;
+    height: 45px;
+    text-align: center;
+
+    dislay: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 6px;
+
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffff;
+`;
 
 export default FinancialInformation;
