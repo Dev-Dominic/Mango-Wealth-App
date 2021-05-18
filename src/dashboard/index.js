@@ -13,7 +13,7 @@ import { Line } from 'react-chartjs-2';
 const Dashboard = () => {
     return (
         <DashboardWrapper>
-            <p className="dashboard-heading"> DASHBOARD </p>
+            <p className="dashboard-heading"> DOMINIC'S  DASHBOARD </p>
             <DashboardContainer>
                 <div style={{ display: "flex", marginBottom: "2rem" }}>
                     <div style={{ marginRight: "3rem" }}>
@@ -42,7 +42,7 @@ const Dashboard = () => {
                             </CardContent>
                             <CardActions>
                                 <CardActions>
-                                    <Button variant="outlined" size="small">Add Income</Button>
+                                    <Button variant="outlined" size="small" color="primary">Add Income</Button>
                                 </CardActions>
                             </CardActions>
                         </Card>
@@ -63,7 +63,7 @@ const Dashboard = () => {
                                         labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5'],
                                         datasets: [{
                                             label: 'Amount per week ($)',
-                                            data: [12, 2, 5, 8, 30],
+                                            data: [2, 11, 5, 8, 15],
                                             borderColor: 'rgb(75, 192, 192)',
                                         }]
                                     }}
@@ -71,12 +71,12 @@ const Dashboard = () => {
                             </div>
                         </CardContent>
                         <CardActions>
-                            <Button variant="outlined" size="small">Add Expense</Button>
+                            <Button variant="outlined" size="small" color="primary">Add Expense</Button>
                         </CardActions>
                     </Card>
                 </div>
 
-                <div>
+                <div style={{ display: "flex" }}>
                     <ItemContainer>
                         <Card>
                             <CardContent>
@@ -92,7 +92,7 @@ const Dashboard = () => {
                                             labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5'],
                                             datasets: [{
                                                 label: 'Amount per week ($)',
-                                                data: [12, 2, 5, 8, 30],
+                                                data: [12, 8, 2, 8, 30],
                                                 borderColor: 'rgb(254, 0, 0)'
                                             }]
                                         }}
@@ -101,8 +101,10 @@ const Dashboard = () => {
                             </CardContent>
                         </Card>
                     </ItemContainer>
+                    <div style={{ paddingTop: "27rem", paddingLeft: "4rem" }}>
+                        <Button variant="outlined" size="small" color="primary"> Add Goal </Button>
+                    </div>
                 </div>
-                <Button variant="outlined" size="small"> Add Goal </Button>
             </DashboardContainer>
         </DashboardWrapper>
     );
@@ -127,18 +129,6 @@ const ItemContainer = styled.div`
     margin-bottom: 2rem;
     `;
 
-
-const PlusBtn = styled.button`
-    width: 40px;
-    height: 40px;
-    font-weight: 700;
-    text-align: center;
-    background: #ffff;
-    color: var(--primary-blue)
-    padding: 5px;
-    border-radius: 24px;
-    border: 1px solid var(--primary-blue);
- `;
 /**
  Components:
  Income (Graph)
