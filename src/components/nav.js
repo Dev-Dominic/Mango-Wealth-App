@@ -3,13 +3,6 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { Tabs, Tab, AppBar } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
-import logo from '../assets/logo.svg';
-import SignUp from '../pages/auth/signUp';
-import Login from '../pages/auth/login';
-import About from '../pages/About';
-import Contact from '../pages/ContactUs';
-import Services from '../pages/Services';
-import Home from '../pages/Home';
 
 
 const NavBar = () => {
@@ -32,7 +25,6 @@ const NavBar = () => {
                 </AllTabs>
             </AppBar>
 
-            {value === 0 && <Home />}
         </>
     );
 }
