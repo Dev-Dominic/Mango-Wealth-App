@@ -7,7 +7,7 @@ import Login from './pages/auth/login';
 import OnboardingIntro from './pages/onboarding/onboardingIntro';
 import Demographics from './pages/onboarding/onboardingDemographics';
 import FinancialInformation from './pages/onboarding/onboardingFinancial';
-import FinancialProducts from './pages/onboarding/onboardingFinancial';
+import FinancialProducts from './pages/onboarding/onboardingProducts';
 
 
 function App() {
