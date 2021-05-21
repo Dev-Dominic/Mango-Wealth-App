@@ -2,14 +2,14 @@ import React from 'react';
 import styled from '@emotion/styled';
 import Grid from '@material-ui/core/Grid';
 import ownHome from '../../assets/home-ownership.png';
-import tuition from '../../assets/scholarship.png';
-import loan from '../../assets/loan.png';
+import tuition from '../../assets/scholarship.png.png';
+import loan from '../../assets/loan.png.png';
 
 const LandingThree = () => {
     return (
         <>
             <LandingThreeWrapper>
-                <p className='white-heading'> Plan your financial future </p>
+                <p className='white-heading'> Plan your financial future with Mango Wealth </p>
                 <CardContainer>
                     <Card>
                         <img src={ownHome} className="card-img" />
