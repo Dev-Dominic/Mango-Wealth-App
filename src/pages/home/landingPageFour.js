@@ -25,6 +25,7 @@ const LandingFour = () => {
                     <p className="card-title"> Mango Wealth is completely free </p>
                 </Card>
             </CardContainer>
+            <p className="footer-text"> © 2021 D34 Solutions. All Rights Reserved.</p>
         </LandingFourWrapper>
     );
 }
