@@ -1,6 +1,6 @@
 import React from 'react';
-import Dashboard from '../dashboard';
-import NewGoal from '../dashboard/NewGoal';
+import Dashboard from './dashboard';
+import NewGoal from './dashboard/NewGoal';
 import LandingOne from './home/landingPageOne';
 import LandingTwo from './home/landingPageTwo';
 
@@ -9,8 +9,6 @@ const Home = () => {
         <>
             <LandingOne />
             <LandingTwo />
-            <Dashboard />
-            <NewGoal />
         </>
     );
 }
