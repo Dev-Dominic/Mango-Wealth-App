@@ -40,7 +40,8 @@ const LandingThreeWrapper = styled.div`
     height: 50vh;
     justify-content: center;
     flex-direction:column;
-    padding: 6rem 5rem;
+    padding: 7rem 5rem;
+    ${'' /* border-radius: 0px 0px 300px 300px; */}
 `;
 
 const CardContainer = styled.div`

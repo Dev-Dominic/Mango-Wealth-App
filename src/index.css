@@ -121,7 +121,7 @@ table {
 
   .card-img{
 	  width:200px;
-	  height:200px;
+	  height:220px;
 
   }
 
@@ -130,8 +130,19 @@ table {
 	font-size: 24px;
 	font-weight: 700;
 	color: var(--primary-blue);
-	/* line-height: 68px; */
-	/* text-align: center; */
 	margin-top: 4rem;
 	line-height: 32px;
+  }
+
+  .reasons-heading{
+	font-family: 'Lato', sans-serif;
+	font-size: 48px;
+	font-weight: 700;
+	color: var(--primary-blue);
+	line-height: 68px;
+	text-align: center;
+  }
+
+  #left{
+	  margin-left: 3rem;
   }

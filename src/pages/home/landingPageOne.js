@@ -39,8 +39,8 @@ const LandingOne = () => {
             <Grid item xs={6}>
                 <ContentContainer style={{ paddingBottom: "1rem", paddingRight: "5rem" }}>
                     <p className="headings"> Finance your dreams with us </p>
-                    <p className="text-content" style={{ lineHeight: "45px", marginTop: "1rem" }}>
-                        Our impressive recommender system is the smartest way to plan, save and invest for your future.
+                    <p className="text-content" style={{ lineHeight: "45px", marginTop: "2rem" }}>
+                        Our impressive recommender and goal tracking system is the smartest way to plan, save and invest for your future.
                     </p>
                 </ContentContainer>
 
