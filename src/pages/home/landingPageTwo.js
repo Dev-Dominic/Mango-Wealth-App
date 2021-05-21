@@ -3,7 +3,6 @@ import styled from '@emotion/styled';
 import Grid from '@material-ui/core/Grid';
 import decorTwo from '../../assets/landing-two-decor.svg';
 import stroke from '../../assets/stroke.svg';
-import { useHistory } from 'react-router-dom';
 
 const LandingTwoWrapper = styled.div`
     background: var(--main-background-blue);
@@ -39,12 +38,6 @@ const Button = styled.button`
 `;
 
 const LandingTwo = () => {
-    let history = useHistory();
-
-    const redirect = () => {
-        history.push('/sign-up')
-    }
-
     return (
         <LandingTwoWrapper>
             <Grid item xs={6}>
@@ -69,7 +62,7 @@ const LandingTwo = () => {
                     </SubContainer>
                 </ContentContainer>
 
-                <Button onClick={redirect}> Get Started </Button>
+                <Button> Get Started </Button>
 
             </Grid>
         </LandingTwoWrapper>
