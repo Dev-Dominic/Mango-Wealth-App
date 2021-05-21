@@ -1,23 +1,30 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Grid from '@material-ui/core/Grid';
+import ownHome from '../../assets/home-ownership.png';
+import tuition from '../../assets/scholarship.png';
+import loan from '../../assets/loan.png';
 
 const LandingThree = () => {
     return (
         <>
             <LandingThreeWrapper>
-                <p className='white-heading'> Owning a home </p>
+                <p className='white-heading'> Plan your financial future </p>
                 <CardContainer>
                     <Card>
-                        dsuigfudasgvfbudsagvfkds
-                        <p> euifguiewfg</p>
+                        <img src={ownHome} className="card-img" />
+                        <p className="card-title"> Owning a home </p>
                     </Card>
 
-                    <Card> rdhgrea
-                        <p>jehvfjhewvqf</p>
+                    <Card>
+                        <img src={tuition} className="card-img" />
+                        <p className="card-title"> Saving for tuition</p>
                     </Card>
 
-                    <Card> rdhgrea </Card>
+                    <Card>
+                        <img src={loan} className="card-img" />
+                        <p className="card-title"> Loan payment tracking </p>
+                    </Card>
                 </CardContainer>
             </LandingThreeWrapper>
         </>
@@ -33,6 +40,7 @@ const LandingThreeWrapper = styled.div`
     height: 50vh;
     justify-content: center;
     flex-direction:column;
+    padding: 6rem 5rem;
 `;
 
 const CardContainer = styled.div`
@@ -47,4 +55,7 @@ const Card = styled.div`
     border-radius: 6px;
     width: 400px;
     padding: 3rem;
+    display:flex;
+    justify-content:center;
+    ${'' /* flex-direction:column; */}
  `;
