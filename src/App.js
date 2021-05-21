@@ -7,7 +7,7 @@ import Login from './pages/auth/login';
 import OnboardingIntro from './pages/onboarding/onboardingIntro';
 import Demographics from './pages/onboarding/onboardingDemographics';
 import FinancialInformation from './pages/onboarding/onboardingFinancial';
-import FinancialProducts from './pages/onboarding/onboardingProducts';
+// import FinancialProducts from './pages/onboarding/onboardingProducts';
 import Dashboard from './pages/dashboard';
 import ProductPage from './pages/dashboard/productPage';
 
@@ -24,7 +24,7 @@ function App() {
           <Route exact path='/onboarding-intro' component={OnboardingIntro} />
           <Route exact path='/onboarding-demographics' component={Demographics} />
           <Route exact path='/onboarding-financial-info' component={FinancialInformation} />
-          <Route exact path='/onboarding-financial-products' component={FinancialProducts} />
+          {/* <Route exact path='/onboarding-financial-products' component={FinancialProducts} /> */}
           <Route exact path='/dashboard' component={Dashboard} />
           <Route exact path='/product-page' component={ProductPage} />
         </Switch>
