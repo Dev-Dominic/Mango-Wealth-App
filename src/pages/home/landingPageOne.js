@@ -6,8 +6,8 @@ import decor from '../../assets/landing-page-decor.svg';
 const LandingWrapper = styled.div`
     background: var(--landing-background);
     display: flex;
-    height: 60vh;
-    padding: 10rem 10rem;
+    height: 70vh;
+    padding: 5rem 10rem;
 `;
 
 const ContentContainer = styled.div`
@@ -40,11 +40,14 @@ const LandingOne = () => {
                 <ContentContainer style={{ paddingBottom: "1rem", paddingRight: "5rem" }}>
                     <p className="headings"> Finance your dreams with us </p>
                     <p className="text-content" style={{ lineHeight: "45px", marginTop: "2rem" }}>
-                        Our impressive recommender and goal tracking system is the smartest way to plan, save and invest for your future.
+                        Mango Wealth is an application that enables users to make more informed decisions when
+                        choosing financial products to achieve their goals.
+                        Our impressive recommender and goal tracking system is the smartest way to plan,
+                        save and invest for your future.
                     </p>
                 </ContentContainer>
 
-                <Button style={{ marginTop: "5rem" }}> Learn More </Button>
+                <Button style={{ marginTop: "2rem" }}> Learn More </Button>
             </Grid>
 
             <Grid item xs={6}>
